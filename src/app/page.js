@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect, use } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // Main App Component
 const Home = () => {
@@ -336,7 +336,7 @@ const Home = () => {
       <section className="bg-indigo-700 text-white py-16">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4">Ready to Transform Your Business?</h2>
-          <p className="text-xl mb-8 opacity-90">Let's build something amazing together. Contact us today for a free consultation.</p>
+          <p className="text-xl mb-8 opacity-90">Let&apos;s build something amazing together. Contact us today for a free consultation.</p>
           <CTAButton text="Start Your Project" onClick={() => navigate('contact')} primary={true} />
           </div>
       </section>
@@ -606,7 +606,7 @@ const Home = () => {
           <div className="bg-white rounded-lg shadow-xl p-8 md:p-12 mb-12">
             <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Mission</h3>
             <p className="text-gray-700 leading-relaxed text-lg">
-              At DevSpark, our mission is to transform visionary ideas into impactful digital realities. We are committed to delivering custom-coded, high-quality web and mobile solutions that not only meet but exceed our clients' expectations, driving their growth and success in the digital landscape.
+              At DevSpark, our mission is to transform visionary ideas into impactful digital realities. We are committed to delivering custom-coded, high-quality web and mobile solutions that not only meet but exceed our clients&apos; expectations, driving their growth and success in the digital landscape.
             </p>
           </div>
 
@@ -731,7 +731,7 @@ const Home = () => {
 
   const TestimonialCard = ({ testimonial }) => (
     <div className="bg-white rounded-lg shadow-lg p-8 flex flex-col justify-between h-full">
-      <p className="text-gray-700 text-lg italic mb-6">"{testimonial.quote}"</p>
+      <p className="text-gray-700 text-lg italic mb-6">&quot;{testimonial.quote}&quot;</p>
       <div className="flex items-center">
         <img src={testimonial.logo} alt={`${testimonial.author} company logo`} className="h-12 w-auto mr-4 rounded-md object-contain" onError={(e) => { e.target.onerror = null; e.target.src = "https://placehold.co/80x40/CCCCCC/333333?text=Logo"; }} />
         <div>
