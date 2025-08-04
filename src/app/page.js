@@ -34,8 +34,10 @@ const Home = () => {
     <button
       onClick={onClick}
       className={`px-8 py-3 rounded-full font-semibold transition-all duration-300
-        ${primary ? 'bg-indigo-600 text-white hover:bg-indigo-700 shadow-lg' : 'bg-transparent border-2 border-indigo-600 text-indigo-600 hover:bg-indigo-50 hover:text-indigo-700'}
-        focus:outline-none focus:ring-4 focus:ring-indigo-300`}
+        ${primary
+          ? 'bg-teal-600 text-white hover:bg-teal-700 shadow-lg focus:ring-teal-400'
+          : 'bg-white border-2 border-teal-600 text-teal-600 hover:bg-teal-50 hover:text-teal-700 focus:ring-teal-200'}
+        focus:outline-none focus:ring-4`}
     >
       {text}
     </button>
