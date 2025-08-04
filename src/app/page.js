@@ -35,8 +35,8 @@ const Home = () => {
       onClick={onClick}
       className={`px-8 py-3 rounded-full font-semibold transition-all duration-300
         ${primary
-          ? 'bg-teal-600 text-white hover:bg-teal-700 shadow-lg focus:ring-teal-400'
-          : 'bg-white border-2 border-teal-600 text-teal-600 hover:bg-teal-50 hover:text-teal-700 focus:ring-teal-200'}
+          ? 'bg-orange-500 text-white hover:bg-orange-600 shadow-lg focus:ring-orange-300'
+          : 'bg-white border-2 border-orange-500 text-orange-600 hover:bg-orange-50 hover:text-orange-700 focus:ring-orange-200'}
         focus:outline-none focus:ring-4`}
     >
       {text}
