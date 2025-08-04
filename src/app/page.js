@@ -226,31 +226,66 @@ const Home = () => {
       </section>
 
       {/* Services Overview Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-20 bg-gradient-to-br from-emerald-50 to-white">
         <div className="container mx-auto px-6">
           <SectionTitle
-            title="Our Core Services"
-            subtitle="We provide end-to-end digital solutions tailored to your unique business needs."
+            title="Our Services"
+            subtitle="From strategic planning and user experience design to development, testing, and rollout, we challenge assumptions to deeply understand your business and deliver solutions that drive real results."
           />
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <ServiceCard
-              icon="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-              title="Web Development"
-              description="Crafting stunning, responsive, and high-performing websites tailored to your brand."
-              onClick={() => navigate('services')}
-            />
-            <ServiceCard
-              icon="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-              title="Mobile App Development"
-              description="Building intuitive iOS & Android applications that engage users and drive growth."
-              onClick={() => navigate('services')}
-            />
-            <ServiceCard
-              icon="M10 19l-2 2m0 0l-2-2m2 2v-8m10-4l2-2m0 0l2 2m-2-2V5m-3 10h.01M6 10h.01"
-              title="Automation & APIs"
-              description="Streamlining your operations with custom business tools, automation scripts, and seamless API integrations."
-              onClick={() => navigate('services')}
-            />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+            {/* Custom Software */}
+            <div className="bg-white rounded-3xl shadow-xl p-8 flex flex-col items-start hover:shadow-2xl transition-shadow border-t-4 border-emerald-500">
+              <div className="bg-emerald-100 p-4 rounded-full mb-4">
+                <svg className="h-8 w-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" /></svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-2">Custom Software</h3>
+              <p className="text-gray-700 mb-4">Transform complex ideas into powerful digital products, apps, and business systems. We leverage deep experience and best practices to build robust solutions that scale with your business.</p>
+              <ul className="mb-4 space-y-1 text-gray-600 text-sm">
+                <li>• Web & Mobile Apps</li>
+                <li>• Cloud & Enterprise Systems</li>
+                <li>• DevOps & Automation</li>
+                <li>• Business Analysis</li>
+                <li>• Quality Assurance & Testing</li>
+                <li>• Ongoing Support & Maintenance</li>
+              </ul>
+              <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full">End-to-End Delivery</span>
+            </div>
+            {/* Product Design */}
+            <div className="bg-white rounded-3xl shadow-xl p-8 flex flex-col items-start hover:shadow-2xl transition-shadow border-t-4 border-pink-400">
+              <div className="bg-pink-100 p-4 rounded-full mb-4">
+                <svg className="h-8 w-8 text-pink-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 10c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z" /></svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-2">Product Design</h3>
+              <p className="text-gray-700 mb-4">We help you truly listen to your users and craft memorable digital experiences. Our design process is iterative, collaborative, and focused on real-world impact.</p>
+              <ul className="mb-4 space-y-1 text-gray-600 text-sm">
+                <li>• User Research & Insights</li>
+                <li>• Prototyping & Wireframing</li>
+                <li>• Continuous UX Improvement</li>
+                <li>• Design Sprints & Workshops</li>
+                <li>• Accessibility & Usability Audits</li>
+              </ul>
+              <span className="inline-block bg-pink-100 text-pink-600 text-xs font-semibold px-3 py-1 rounded-full">Human-Centered</span>
+            </div>
+            {/* Data & Analytics */}
+            <div className="bg-white rounded-3xl shadow-xl p-8 flex flex-col items-start hover:shadow-2xl transition-shadow border-t-4 border-indigo-500">
+              <div className="bg-indigo-100 p-4 rounded-full mb-4">
+                <svg className="h-8 w-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3v18h18M9 17V9m4 8V5m4 12v-6" /></svg>
+              </div>
+              <h3 className="text-2xl font-bold mb-2">Data & Analytics</h3>
+              <p className="text-gray-700 mb-4">Empower your organization to make smarter, data-driven decisions. We turn raw data into actionable insights and help you build a culture of continuous improvement.</p>
+              <ul className="mb-4 space-y-1 text-gray-600 text-sm">
+                <li>• Data Science & Machine Learning</li>
+                <li>• Business Intelligence Dashboards</li>
+                <li>• Analytics Consulting & Advisory</li>
+                <li>• Data Engineering & Integration</li>
+                <li>• Reporting Automation</li>
+              </ul>
+              <span className="inline-block bg-indigo-100 text-indigo-700 text-xs font-semibold px-3 py-1 rounded-full">Insight-Driven</span>
+            </div>
+          </div>
+          <div className="mt-16 text-center max-w-2xl mx-auto">
+            <h4 className="text-xl font-bold mb-2 text-emerald-700">Why Partner With Us?</h4>
+            <p className="text-gray-700 text-lg">We go beyond code. Our team becomes your strategic partner, challenging assumptions, sharing expertise, and supporting you at every stage. Let’s build something remarkable together.</p>
           </div>
         </div>
       </section>
