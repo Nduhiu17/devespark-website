@@ -384,8 +384,8 @@ const Home = () => {
 
   const FeatureCard = ({ icon, title, description }) => (
     <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col items-center text-center">
-      <div className="p-4 bg-purple-100 rounded-full mb-6">
-        <svg className="h-10 w-10 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <div className="p-4 bg-indigo-100 rounded-full mb-6">
+        <svg className="h-10 w-10 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={icon}></path>
         </svg>
       </div>
@@ -744,11 +744,15 @@ const Home = () => {
 
   // Contact Page Component
   const ContactPage = () => {
+    const [form, setForm] = useState({ name: '', email: '', service: '', message: '' });
+    const handleChange = (e) => {
+      setForm({ ...form, [e.target.name]: e.target.value });
+    };
     const handleSubmit = (e) => {
       e.preventDefault();
-      // In a real application, you would send this data to a backend API
-      showCustomModal('Thank you for your message! We will get back to you shortly.');
-      e.target.reset(); // Clear the form
+      const text = `Name: ${form.name}\nEmail: ${form.email}\nService: ${form.service}\nMessage: ${form.message}`;
+      const url = `https://wa.me/254758712537?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank');
     };
 
     return (
@@ -771,6 +775,8 @@ const Home = () => {
                       type="text"
                       id="name"
                       name="name"
+                      value={form.name}
+                      onChange={handleChange}
                       className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                       placeholder="John Doe"
                       required
@@ -782,6 +788,8 @@ const Home = () => {
                       type="email"
                       id="email"
                       name="email"
+                      value={form.email}
+                      onChange={handleChange}
                       className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                       placeholder="you@example.com"
                       required
@@ -792,8 +800,9 @@ const Home = () => {
                     <select
                       id="service"
                       name="service"
+                      value={form.service}
+                      onChange={handleChange}
                       className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-                      defaultValue=""
                       required
                     >
                       <option value="" disabled>Select a service</option>
@@ -810,6 +819,8 @@ const Home = () => {
                       id="message"
                       name="message"
                       rows="5"
+                      value={form.message}
+                      onChange={handleChange}
                       className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                       placeholder="Tell us about your project or question..."
                       required
@@ -833,7 +844,7 @@ const Home = () => {
                   </div>
                   <div className="flex items-start">
                     <svg className="h-7 w-7 text-indigo-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                    <span>Intersection of Waiyaki Way, Chiromo Ln, Westlands, Nairobi</span>
+                    <span>Chiromo Lane, Westlands, Nairobi</span>
                   </div>
                 </div>
                 <div className="mt-8">
