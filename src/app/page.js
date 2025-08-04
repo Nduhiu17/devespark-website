@@ -156,7 +156,7 @@ const Home = () => {
   const HomePage = () => (
     <div className="pt-20"> {/* Padding top to account for fixed header */}
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-900 to-indigo-900 text-white py-20 md:py-32 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-gray-900 to-indigo-900 text-white py-20 md:py-32 overflow-hidden rounded-b-3xl">
         <div className="absolute inset-0 z-0">
           {/* Techy Spiral SVG Background */}
           <svg className="w-full h-full" fill="none" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
