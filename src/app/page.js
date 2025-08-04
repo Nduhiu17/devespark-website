@@ -151,12 +151,12 @@ const Home = () => {
             <li><a onClick={() => navigate('portfolio')} className="text-gray-400 hover:text-indigo-400 cursor-pointer transition duration-300">Portfolio</a></li>
             <li><a onClick={() => navigate('about')} className="text-gray-400 hover:text-indigo-400 cursor-pointer transition duration-300">About Us</a></li>
             <li>
-             <a
+              <a
                 href="https://wa.me/254746887291"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Chat with us on WhatsApp"
-                className="flex items-center gap-2 p-3 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-green-300 focus:ring-opacity-75"
+                className="inline-flex items-center gap-2 px-3 py-2 w-auto bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-green-300 focus:ring-opacity-75"
                 title="Chat with us on WhatsApp"
                 style={{ boxShadow: "0 4px 16px rgba(16, 185, 129, 0.25)" }}
               >
