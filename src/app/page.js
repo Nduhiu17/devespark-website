@@ -80,22 +80,22 @@ const Home = () => {
           <a onClick={() => navigate('portfolio')} className="text-gray-200 hover:text-indigo-400 cursor-pointer text-lg font-medium transition duration-300">Portfolio</a>
           <a onClick={() => navigate('about')} className="text-gray-200 hover:text-indigo-400 cursor-pointer text-lg font-medium transition duration-300">About Us</a>
           <a
-            href="https://wa.me/254758712537"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center text-gray-200 hover:text-green-500 cursor-pointer text-lg font-medium transition duration-300"
-            title="Chat with us on WhatsApp"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-              fill="currentColor"
-              className="w-5 h-5 mr-2 text-green-500"
+              href="https://wa.me/254758712537"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-green-300 focus:ring-opacity-75"
+              title="Chat with us on WhatsApp"
+              style={{ boxShadow: '0 4px 16px rgba(16, 185, 129, 0.25)' }}
             >
-              <path d="M380.9 97.1C339-3.6 224.8-32.6 135.5 25.1 46.2 82.8 17.2 197 75 286.3l-24.7 90.5c-3.4 12.5 8.4 24.3 20.9 20.9l90.5-24.7c89.3 57.8 203.5 28.8 261.2-60.5 57.7-89.3 28.7-203.5-60.5-261.2zm-17.7 241.7c-47.1 72.8-146.2 94.2-219 47.1-5.2-3.4-12-4.4-17.8-2.7l-56.7 15.5 15.5-56.7c1.7-5.8.7-12.6-2.7-17.8-47.1-72.8-25.7-171.9 47.1-219 72.8-47.1 171.9-25.7 219 47.1 47.1 72.8 25.7 171.9-47.1 219zm-25.2-61.2c-6.8-3.4-40.2-19.8-46.4-22.1-6.2-2.3-10.7-3.4-15.2 3.4-4.5 6.8-17.4 22.1-21.3 26.6-3.9 4.5-7.8 5.1-14.6 1.7-6.8-3.4-28.7-10.6-54.7-33.8-20.2-18-33.8-40.2-37.8-47-3.9-6.8-.4-10.5 3-14 3.1-3.1 6.8-8.1 10.2-12.1 3.4-4 4.5-6.8 6.8-11.3 2.3-4.5 1.1-8.5-.6-12-1.7-3.4-15.2-36.7-20.8-50.3-5.5-13.2-11.1-11.4-15.2-11.6-3.9-.2-8.5-.2-13.1-.2s-12 1.7-18.3 8.5c-6.2 6.8-23.9 23.3-23.9 56.8 0 33.5 24.5 65.9 27.9 70.5 3.4 4.5 48.1 73.6 116.6 100.2 16.3 6.3 29 10.1 38.9 12.9 16.3 4.6 31.2 3.9 42.9 2.4 13.1-1.7 40.2-16.4 45.9-32.3 5.7-15.9 5.7-29.5 4-32.3-1.7-2.8-6.2-4.5-13-7.9z"/>
-            </svg>
-            WhatsApp
-          </a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8 text-white"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M.999 23.003L2.73 17.65a8.97 8.97 0 01-1.34-4.887C1.39 6.84 6.84 1.39 13.007 1.39c3.08 0 5.96 1.2 8.16-3.393s3.39 5.08 3.39 8.16a8.97 8.97 0 01-1.34 4.887L23.003 23.003l-5.353-1.73a9.003 9.003 0 01-4.887 1.34c-6.16 0-11.61-5.45-11.61-11.61a8.97 8.97 0 011.34-4.887L.999 0 .999 23.003zM13.007 3.39c-5.06 0-9.21 4.15-9.21 9.21 0 1.95.6 3.76 1.63 5.25L3.447 21.55l3.227-1.047a7.22 7.22 0 004.887 1.34h.01c5.06 0 9.21-4.15 9.21-9.21s-4.15-9.21-9.21-9.21zM17.007 15.61c-.24 0-.48-.07-.69-.14l-1.92-1.22c-.14-.08-.3-.1-.45-.04l-1.12.35c-.24.08-.5.06-.72-.05-.23-.1-.4-.28-.5-.5l-.35-1.12c-.06-.15-.04-.31.04-.45l1.22-1.92c.07-.21.0-2.07-2.06-2.07-.24 0-.48-.07-.69-.14l-1.92-1.22c-.14-.08-.3-.1-.45-.04l-1.12.35c-.24.08-.5.06-.72-.05-.23-.1-.4-.28-.5-.5l-.35-1.12c-.06-.15-.04-.31.04-.45l1.22-1.92c.07-.21.0-2.07-2.06-2.07" />
+              </svg>
+            </a>
           <CTAButton text="Get a Quote" onClick={() => navigate('contact')} primary={true} />
         </div>
         <div className="md:hidden">
@@ -117,22 +117,22 @@ const Home = () => {
           <a onClick={() => navigate('portfolio')} className="block px-6 py-3 text-gray-200 hover:bg-gray-700 font-medium transition duration-300">Portfolio</a>
           <a onClick={() => navigate('about')} className="block px-6 py-3 text-gray-200 hover:bg-gray-700 font-medium transition duration-300">About Us</a>
           <a
-            href="https://wa.me/254758712537"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center px-6 py-3 text-gray-200 hover:bg-gray-700 hover:text-green-500 font-medium transition duration-300"
-            title="Chat with us on WhatsApp"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-              fill="currentColor"
-              className="w-5 h-5 mr-2 text-green-500"
+              href="https://wa.me/254758712537"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-green-300 focus:ring-opacity-75"
+              title="Chat with us on WhatsApp"
+              style={{ boxShadow: '0 4px 16px rgba(16, 185, 129, 0.25)' }}
             >
-              <path d="M380.9 97.1C339-3.6 224.8-32.6 135.5 25.1 46.2 82.8 17.2 197 75 286.3l-24.7 90.5c-3.4 12.5 8.4 24.3 20.9 20.9l90.5-24.7c89.3 57.8 203.5 28.8 261.2-60.5 57.7-89.3 28.7-203.5-60.5-261.2zm-17.7 241.7c-47.1 72.8-146.2 94.2-219 47.1-5.2-3.4-12-4.4-17.8-2.7l-56.7 15.5 15.5-56.7c1.7-5.8.7-12.6-2.7-17.8-47.1-72.8-25.7-171.9 47.1-219 72.8-47.1 171.9-25.7 219 47.1 47.1 72.8 25.7 171.9-47.1 219zm-25.2-61.2c-6.8-3.4-40.2-19.8-46.4-22.1-6.2-2.3-10.7-3.4-15.2 3.4-4.5 6.8-17.4 22.1-21.3 26.6-3.9 4.5-7.8 5.1-14.6 1.7-6.8-3.4-28.7-10.6-54.7-33.8-20.2-18-33.8-40.2-37.8-47-3.9-6.8-.4-10.5 3-14 3.1-3.1 6.8-8.1 10.2-12.1 3.4-4 4.5-6.8 6.8-11.3 2.3-4.5 1.1-8.5-.6-12-1.7-3.4-15.2-36.7-20.8-50.3-5.5-13.2-11.1-11.4-15.2-11.6-3.9-.2-8.5-.2-13.1-.2s-12 1.7-18.3 8.5c-6.2 6.8-23.9 23.3-23.9 56.8 0 33.5 24.5 65.9 27.9 70.5 3.4 4.5 48.1 73.6 116.6 100.2 16.3 6.3 29 10.1 38.9 12.9 16.3 4.6 31.2 3.9 42.9 2.4 13.1-1.7 40.2-16.4 45.9-32.3 5.7-15.9 5.7-29.5 4-32.3-1.7-2.8-6.2-4.5-13-7.9z"/>
-            </svg>
-            WhatsApp
-          </a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8 text-white"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path d="M.999 23.003L2.73 17.65a8.97 8.97 0 01-1.34-4.887C1.39 6.84 6.84 1.39 13.007 1.39c3.08 0 5.96 1.2 8.16-3.393s3.39 5.08 3.39 8.16a8.97 8.97 0 01-1.34 4.887L23.003 23.003l-5.353-1.73a9.003 9.003 0 01-4.887 1.34c-6.16 0-11.61-5.45-11.61-11.61a8.97 8.97 0 011.34-4.887L.999 0 .999 23.003zM13.007 3.39c-5.06 0-9.21 4.15-9.21 9.21 0 1.95.6 3.76 1.63 5.25L3.447 21.55l3.227-1.047a7.22 7.22 0 004.887 1.34h.01c5.06 0 9.21-4.15 9.21-9.21s-4.15-9.21-9.21-9.21zM17.007 15.61c-.24 0-.48-.07-.69-.14l-1.92-1.22c-.14-.08-.3-.1-.45-.04l-1.12.35c-.24.08-.5.06-.72-.05-.23-.1-.4-.28-.5-.5l-.35-1.12c-.06-.15-.04-.31.04-.45l1.22-1.92c.07-.21.0-2.07-2.06-2.07-.24 0-.48-.07-.69-.14l-1.92-1.22c-.14-.08-.3-.1-.45-.04l-1.12.35c-.24.08-.5.06-.72-.05-.23-.1-.4-.28-.5-.5l-.35-1.12c-.06-.15-.04-.31.04-.45l1.22-1.92c.07-.21.0-2.07-2.06-2.07" />
+              </svg>
+            </a>
           <div className="px-6 py-3">
             <CTAButton text="Get a Quote" onClick={() => navigate('contact')} />
           </div>
@@ -158,30 +158,31 @@ const Home = () => {
             <li><a onClick={() => navigate('about')} className="text-gray-400 hover:text-indigo-400 cursor-pointer transition duration-300">About Us</a></li>
             <li>
               <a
-                href="https://wa.me/254758712537"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center text-gray-400 hover:text-green-500 transition duration-300"
-                title="Chat with us on WhatsApp"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  fill="currentColor"
-                  className="w-5 h-5 mr-2 text-green-500"
+            
+                  href="https://wa.me/254758712537"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-green-300 focus:ring-opacity-75"
+                  title="Chat with us on WhatsApp"
+                  style={{ boxShadow: '0 4px 16px rgba(16, 185, 129, 0.25)' }}
                 >
-                  <path d="M380.9 97.1C339-3.6 224.8-32.6 135.5 25.1 46.2 82.8 17.2 197 75 286.3l-24.7 90.5c-3.4 12.5 8.4 24.3 20.9 20.9l90.5-24.7c89.3 57.8 203.5 28.8 261.2-60.5 57.7-89.3 28.7-203.5-60.5-261.2zm-17.7 241.7c-47.1 72.8-146.2 94.2-219 47.1-5.2-3.4-12-4.4-17.8-2.7l-56.7 15.5 15.5-56.7c1.7-5.8.7-12.6-2.7-17.8-47.1-72.8-25.7-171.9 47.1-219 72.8-47.1 171.9-25.7 219 47.1 47.1 72.8 25.7 171.9-47.1 219zm-25.2-61.2c-6.8-3.4-40.2-19.8-46.4-22.1-6.2-2.3-10.7-3.4-15.2 3.4-4.5 6.8-17.4 22.1-21.3 26.6-3.9 4.5-7.8 5.1-14.6 1.7-6.8-3.4-28.7-10.6-54.7-33.8-20.2-18-33.8-40.2-37.8-47-3.9-6.8-.4-10.5 3-14 3.1-3.1 6.8-8.1 10.2-12.1 3.4-4 4.5-6.8 6.8-11.3 2.3-4.5 1.1-8.5-.6-12-1.7-3.4-15.2-36.7-20.8-50.3-5.5-13.2-11.1-11.4-15.2-11.6-3.9-.2-8.5-.2-13.1-.2s-12 1.7-18.3 8.5c-6.2 6.8-23.9 23.3-23.9 56.8 0 33.5 24.5 65.9 27.9 70.5 3.4 4.5 48.1 73.6 116.6 100.2 16.3 6.3 29 10.1 38.9 12.9 16.3 4.6 31.2 3.9 42.9 2.4 13.1-1.7 40.2-16.4 45.9-32.3 5.7-15.9 5.7-29.5 4-32.3-1.7-2.8-6.2-4.5-13-7.9z"/>
-                </svg>
-                WhatsApp
-              </a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-8 w-8 text-white"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                  >
+                    <path d="M.999 23.003L2.73 17.65a8.97 8.97 0 01-1.34-4.887C1.39 6.84 6.84 1.39 13.007 1.39c3.08 0 5.96 1.2 8.16-3.393s3.39 5.08 3.39 8.16a8.97 8.97 0 01-1.34 4.887L23.003 23.003l-5.353-1.73a9.003 9.003 0 01-4.887 1.34c-6.16 0-11.61-5.45-11.61-11.61a8.97 8.97 0 011.34-4.887L.999 0 .999 23.003zM13.007 3.39c-5.06 0-9.21 4.15-9.21 9.21 0 1.95.6 3.76 1.63 5.25L3.447 21.55l3.227-1.047a7.22 7.22 0 004.887 1.34h.01c5.06 0 9.21-4.15 9.21-9.21s-4.15-9.21-9.21-9.21zM17.007 15.61c-.24 0-.48-.07-.69-.14l-1.92-1.22c-.14-.08-.3-.1-.45-.04l-1.12.35c-.24.08-.5.06-.72-.05-.23-.1-.4-.28-.5-.5l-.35-1.12c-.06-.15-.04-.31.04-.45l1.22-1.92c.07-.21.0-2.07-2.06-2.07" />
+                  </svg>
+                </a>
             </li>
           </ul>
         </div>
         <div>
           <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
           <p className="text-gray-400">Email: info@devspark.com</p>
-          <p className="text-gray-400">Phone: +254 ( 123-4567</p>
-          <p className="text-gray-400">Address: 123 Tech Lane, Innovation City, TX 78701</p>
+          <p className="text-gray-400">Phone: +254 758 712537</p>
+          <p className="text-gray-400">Address: Global Trade Center, Westlands, Nairobi</p>
           <div className="mt-4">
             <h4 className="text-lg font-semibold mb-2">Stay Updated</h4>
             <form onSubmit={(e) => { e.preventDefault(); showCustomModal('Thanks for subscribing!'); }}>
