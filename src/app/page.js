@@ -82,7 +82,7 @@ const Home = () => {
           <a onClick={() => navigate('portfolio')} className="text-gray-200 hover:text-indigo-400 cursor-pointer text-lg font-medium transition duration-300">Portfolio</a>
           <a onClick={() => navigate('about')} className="text-gray-200 hover:text-indigo-400 cursor-pointer text-lg font-medium transition duration-300">About Us</a>
           <a
-              href="https://wa.me/254746887291"
+              href="https://wa.me/254794070729"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Chat with us on WhatsApp"
@@ -140,7 +140,7 @@ const Home = () => {
             <li><a onClick={() => navigate('about')} className="text-gray-400 hover:text-indigo-400 cursor-pointer transition duration-300">About Us</a></li>
             <li>
               <a
-                href="https://wa.me/254746887291"
+                href="https://wa.me/254794070729"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Chat with us on WhatsApp"
@@ -159,7 +159,7 @@ const Home = () => {
         <div>
           <h3 className="text-xl font-semibold mb-4">Contact Us</h3>
           <p className="text-gray-400">Email: info@devspark.com</p>
-          <p className="text-gray-400">Phone: +254 758 712537</p>
+          <p className="text-gray-400">Phone: +254 794 070729</p>
           <p className="text-gray-400">Address: Global Trade Center, Westlands, Nairobi</p>
           <div className="mt-4">
             <h4 className="text-lg font-semibold mb-2">Stay Updated</h4>
@@ -342,7 +342,7 @@ const Home = () => {
       </section>
       {/* Floating WhatsApp Icon */}
       <a
-        href="https://wa.me/254758712537"
+        href="https://wa.me/254794070729"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-20 sm:bottom-6 right-6 z-50 p-3 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-green-300 focus:ring-opacity-75"
@@ -751,7 +751,7 @@ const Home = () => {
     const handleSubmit = (e) => {
       e.preventDefault();
       const text = `Name: ${form.name}\nEmail: ${form.email}\nService: ${form.service}\nMessage: ${form.message}`;
-      const url = `https://wa.me/254758712537?text=${encodeURIComponent(text)}`;
+      const url = `https://wa.me/25479470729?text=${encodeURIComponent(text)}`;
       window.open(url, '_blank');
     };
 
@@ -840,7 +840,7 @@ const Home = () => {
                   </div>
                   <div className="flex items-center">
                     <svg className="h-7 w-7 text-indigo-600 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                    <span>+254 758 712-537</span>
+                    <span>+254 794 070729</span>
                   </div>
                   <div className="flex items-start">
                     <svg className="h-7 w-7 text-indigo-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
